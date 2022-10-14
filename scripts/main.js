@@ -31,10 +31,10 @@ jQuery(document).ready(function ($) {
         var scrolltoTop = function(){
             $(window).scroll(function(){
                 if ($(window).scrollTop() >= 60) {
-                    $('.page-header').addClass('scroll-top');
+                    $('.page-header .top-header').addClass('scroll-top');
                 }
                 else {
-                    $('.page-header').removeClass('scroll-top');
+                    $('.page-header .top-header').removeClass('scroll-top');
                 }                 
             });
 

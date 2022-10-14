@@ -169,13 +169,13 @@ html{
 .page-header .main-menu .md-button img{
     width: 100%;
 }
-/*.scroll-top{
+.scroll-top{
    position: fixed;
-   top: 0px;
-   width: 100%;
+   top: 5%;
    z-index: 9999;
    transition-duration: 0.3s;
-}*/
+   width: 90%;
+}
 
 @media screen and (max-width: 991px) and (min-width: 768px){
     .page-header .main-menu ul li{
@@ -186,6 +186,9 @@ html{
 @media screen and (max-width: 767px){
     body{
         font-size: calc(7px + 1.5vw);
+    }
+    .scroll-top{
+        width: 95%;
     }
     .page-header .toggle-menu{
         display: block;
@@ -1168,6 +1171,7 @@ html{
 @media screen and (max-width: 767px){
     .page-khoihanh .nav-tabs .nav-item{
         width: 50%;
+        font-size: calc(3px + 2vw);
     }
     .page-khoihanh .tab-content{
         padding: 30px 0px;
