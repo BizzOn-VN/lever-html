@@ -28,17 +28,17 @@
                 <div class="main-menu">
                     <div class="md-button"><img src="./images/button-close.png" alt=""></div>
                     <ul>
-                        <li><a href="#" class="active-menu">Trang chủ</a></li>
-                        <li><a href="#">Giới thiệu</a></li>
-                        <li><a href="#">Chương trình học</a></li>
-                        <li><a href="#">Tại sao chọn LGS</a></li>
-                        <li><a href="#">Tuyển dụng</a></li>
+                        <li><a href="home-page.html" class="active-menu">Trang chủ</a></li>
+                        <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+                        <li><a href="chuong-trinh-hoc.html">Chương trình học</a></li>
+                        <li><a href="chon-LGS.html">Tại sao chọn LGS</a></li>
+                        <li><a href="careers.html">Tuyển dụng</a></li>
                     </ul>
                 </div>
             </div>
             <div class="banner-header">
                 <h4>Chương trình học</h4>
-                <p><a href="#">Trang chủ </a>/ <a href="#" class="active-banner">Chương trình học</a></p>
+                <p><a href="home-page.html">Trang chủ </a>/ <a href="#" class="active-banner">Chương trình học</a></p>
             </div>
         </div>
     </header>
@@ -49,9 +49,9 @@
                     <h4>Tìm chương trình học <br>phù hợp với bạn</h4>
                     <p>Vui lòng chia sẻ với chúng tôi về độ tuổi, năng lực học tập, nhu cầu học tập cũng như điều kiện tài chính để chúng tôi có thể giúp bạn thiết kế một gói học tập vừa cá nhân hóa với người học vừa phù hợp với điều kiện và mong muốn của gia đình. Kết quả đề xuất sẽ được trả về email.</p>
                     <a href="#">Chia sẻ nhu cầu học tập</a>
-                    <img src="./images/sc3-ico-1.png" alt="">
+                    <img src="./images/sc3-ico-1.png" alt="" class="md-desktop">
                 </div>
-                <div class="md-img">
+                <div class="md-img md-desktop">
                     <img src="./images/sc3-img-1.png" alt="">
                 </div>                
             </div>
@@ -83,16 +83,17 @@
                 <!-- Tab content -->
                 <div class="tab-content" id="myTabContent">
                   <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
-                    <p>Câu hỏi 1/6</p>
+                    <p class="mgb-10">Câu hỏi 1/6</p>
                     <div class="progress">
                       <div class="progress-bar" role="progressbar" aria-valuenow="16.6"
                       aria-valuemin="0" aria-valuemax="100" style="width:16.6%">
                         <span class="sr-only">16.6% Complete</span>
                       </div>
                     </div>
-                    <form action="">
-                        <label for=""><span>1</span>Vui lòng cho biết độ tuổi của người học</label>
-                        <input type="text">
+                    <form action="" class="md-form-1">
+                        <label for="" class="md-question clearfix"><span>1</span><p>Vui lòng cho biết độ tuổi của người học</p></label>
+                        <input type="text" placeholder="10">
+                        <p class="ps-ab">tuổi</p>
                     </form>
                     <button class="nexttab btn btn-success">Tiếp theo</button>
                   </div>
@@ -104,12 +105,12 @@
                         <span class="sr-only">33.2% Complete</span>
                       </div>
                     </div>
-                    <form action="">
+                    <form action="" class="md-form-2">
                         <div class="ui form">
                           <div class="grouped fields">
-                            <label><span>2</span>Trình độ tiếng Anh của người học</label>
+                            <label class="md-question clearfix"><span>2</span><p>Trình độ tiếng Anh của người học</p></label>
                             <div class="field">
-                              <div class="ui radio checkbox">
+                              <div class="ui radio checkbox checked">
                                 <input type="radio" name="example2" checked="checked">
                                 <label>Nghe-Nói-Đọc-Viết ở mức Giỏi</label>
                               </div>
@@ -145,32 +146,32 @@
                         <span class="sr-only">50% Complete</span>
                       </div>
                     </div>
-                    <form action="">
-                        <div class="ui form">
+                    <form action="" class="md-form-2 md-form-3">
+                        <div class="ui form" >
                           <div class="grouped fields">
-                            <label><span>3</span>Ngoài chương trình song bằng, LGS còn cung cấp những hoạt động ngoại khóa để nâng cao trải nghiệm học tập của người học. Vui lòng chọn những hoạt động mà anh/chị thấy cần thiết cho người học:</label>
+                            <label class="md-question clearfix"><span>3</span><p>Ngoài chương trình song bằng, LGS còn cung cấp những hoạt động ngoại khóa để nâng cao trải nghiệm học tập của người học. Vui lòng chọn những hoạt động mà anh/chị thấy cần thiết cho người học:</p></label>
                             <div class="field">
-                              <div class="ui checkbox">
-                                <input type="radio" name="example2" checked="checked">
-                                <label>Nghe-Nói-Đọc-Viết ở mức Giỏi</label>
+                              <div class="ui checkbox checked">
+                                <input type="checkbox" name="example2" checked="checked">
+                                <label>Các khóa học kỹ năng như Quản lý cảm xúc, Tư duy, v.v</label>
                               </div>
                             </div>
                             <div class="field">
                               <div class="ui checkbox">
-                                <input type="radio" name="example2">
-                                <label>Nghe-Nói-Đọc-Viết ở mức Khá</label>
+                                <input type="checkbox" name="example2">
+                                <label>Tham gia dự án cộng đồng</label>
                               </div>
                             </div>
                             <div class="field">
                               <div class="ui checkbox">
-                                <input type="radio" name="example2">
-                                <label>Nghe-Nói-Đọc-Viết ở mức Trung bình</label>
+                                <input type="checkbox" name="example2">
+                                <label>Tư vấn/Tham vấn tâm lý</label>
                               </div>
                             </div>
                             <div class="field">
                               <div class="ui checkbox">
-                                <input type="radio" name="example2">
-                                <label>Nghe-Nói-Đọc-Viết ở mức cơ bản</label>
+                                <input type="checkbox" name="example2">
+                                <label>Định hướng nghề nghiệp / Tư vấn du học</label>
                               </div>
                             </div>
                           </div>
@@ -206,12 +207,12 @@
                         <span class="sr-only">100% Complete</span>
                       </div>
                     </div>
-                    <form action="">
+                    <form action="" class="md-form-2 md-form-6">
                         <div class="ui form">
                           <div class="grouped fields">
-                            <label><span>6</span>Điều kiện tài chính của gia đình khi cho con tham gia chương trình song bằng</label>
+                            <label class="md-question clearfix"><span>6</span><p>Điều kiện tài chính của gia đình khi cho con tham gia chương trình song bằng</p></label>
                             <div class="field">
-                              <div class="ui radio checkbox">
+                              <div class="ui radio checkbox checked">
                                 <input type="radio" name="example2" checked="checked">
                                 <label>Có thể chi trả 1-3 triệu/tháng.</label>
                               </div>
@@ -236,28 +237,32 @@
                             </div>
                           </div>
                         </div>
-                    </form>
-                    <form action="">
-                        <p><span>!</span>Thông tin nhận kết quả</p>
-                        <div class="md-row">
+                        <div class="md-question md-question-1"><span>!</span><p>Thông tin nhận kết quả</p></div>
+                        <div class="md-row clearfix">
                             <div class="md-col">
-                                <label for="">Email của bạn (để Lever trả kết quả) *</label>
+                                <label for="">Email của bạn (để Lever trả kết quả) <span>*</span></label>
                                 <input type="text" placeholder="nguyenvana@gmail.com">
+                                <!-- <p class="error">Vui lòng nhập email</p> -->
                             </div>
                             <div class="md-col">
                                 <label for="">Số điện thoại</label>
                                 <input type="phone" placeholder="0359 392 329">
+                                <!-- <p class="error">Vui lòng nhập số điện thoại</p> -->
                             </div>
                         </div>
                         <div class="md-row">
                             <label for="">Mô tả thêm (nếu có)</label>
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                            <textarea name="" id="" cols="30" rows="5"></textarea>
                         </div>
                         <input type="button" value="Nhận kết quả tư vấn">
                     </form>
                   </div>
                 </div>
-
+                <div id="modal-sucess" class="md-modal-fancybox" >
+                    <img src="./images/logo.png" alt="">
+                    <h3 class="smd-title">Đăng ký thông tin thành công!</h3>
+                    <p>Cám ơn bạn đã đăng ký, chúng tôi sẽ liên hệ lại với bạn</p>
+                </div>                   
                 <!-- Tab carousel -->
             </div>
         </div>
@@ -288,10 +293,10 @@
             <div class="container">
                 <div class="logo md-desktop"><a href="#"><img src="./images/logo.png" alt=""></a></div>
                 <ul class="menu-footer">
-                    <li><a href="#">Xác định nhu cầu học</a></li>
-                    <li><a href="#">Tại sao chọn LGS</a></li>
-                    <li><a href="#">Khởi hành cùng LGS</a></li>
-                    <li><a href="#">Câu hỏi thường gặp</a></li>
+                    <li><a href="chuong-trinh-hoc.html">Xác định nhu cầu học</a></li>
+                    <li><a href="chon-LGS.html">Tại sao chọn LGS</a></li>
+                    <li><a href="khoi-hanh.html">Khởi hành cùng LGS</a></li>
+                    <li><a href="FAQ.html">Câu hỏi thường gặp</a></li>
                 </ul>
                 <ul class="md-social clearfix">
                     <li><a href="#"><img src="./images/ico-fb.png" alt=""></a></li>

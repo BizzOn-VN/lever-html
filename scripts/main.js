@@ -90,7 +90,7 @@ jQuery(document).ready(function ($) {
             $('.ui.checkbox').checkbox();
         }
         var fancybox = function(){
-            // $("#md-tk").fancybox().trigger('click');
+            // $("#modal-sucess").fancybox().trigger('click');
         }
 
         var nav_tabs = function(){
