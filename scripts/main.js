@@ -10,6 +10,7 @@ jQuery(document).ready(function ($) {
       App.Site.getslider();
       App.Site.semanticUI();
       App.Site.fancybox();
+      App.Site.nav_tabs();
   });
 
   //--All site
@@ -40,7 +41,7 @@ jQuery(document).ready(function ($) {
         }
 
         var getheight = function(){
-
+            $('.page-main .section-2 .md-content .md-row .md-col-3').height(h3height); 
             var h3height = 0;
                 $('.page-main .section-2 .md-content .md-row .md-col-3').each(function() {
                     if(h3height < $(this).height()){
@@ -62,6 +63,37 @@ jQuery(document).ready(function ($) {
         }
 
         var getslider = function(){
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:15,
+                nav:true,
+                responsive:{
+                    0:{
+                        items:1.5
+                    },
+                    600:{
+                        items:2.5
+                    },
+                    1000:{
+                        items: 3.5
+                    }
+                }
+            });
+            
+        }
+
+        var semanticUI = function(){
+            $('.ui.dropdown')
+              .dropdown()
+            ;
+            new WOW().init();
+            $('.ui.checkbox').checkbox();
+        }
+        var fancybox = function(){
+            // $("#md-tk").fancybox().trigger('click');
+        }
+
+        var nav_tabs = function(){
             function bootstrapTabControl(){
               var i, items = $('.nav-link'), pane = $('.tab-pane');
               // next
@@ -85,17 +117,6 @@ jQuery(document).ready(function ($) {
             bootstrapTabControl();
         }
 
-        var semanticUI = function(){
-            $('.ui.dropdown')
-              .dropdown()
-            ;
-            new WOW().init();
-            $('.ui.checkbox').checkbox();
-        }
-        var fancybox = function(){
-            // $("#md-tk").fancybox().trigger('click');
-        }
-
 
         return{
             gettoggle:gettoggle,
@@ -104,7 +125,7 @@ jQuery(document).ready(function ($) {
             getslider:getslider,
             semanticUI:semanticUI,
             fancybox:fancybox,
-
+            nav_tabs:nav_tabs,
         };
 
     }(); 
