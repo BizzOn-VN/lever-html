@@ -79,6 +79,9 @@ input[type=submit] {
 .mgb-10{
     margin-bottom: 10px;
 }
+.mgb-5{
+    margin-bottom: 5px !important;
+}
 
 @media screen and (max-width: 767px){
     .md-desktop{
@@ -1304,7 +1307,46 @@ p.error{
     margin-bottom: 0px;
     padding-top: 8px;
 }
-
+.page-career .detail-content{
+    margin-bottom: 60px;
+}
+.page-career .detail-content .left-detail{
+    float: left; 
+    width: 68%;
+}
+.page-career .detail-content .left-detail .md-col{
+    margin-bottom: 40px;
+}
+.page-career .detail-content .left-detail p{
+    margin-bottom: 5px;
+}
+.page-career .detail-content .left-detail h6{
+    font-weight: 700;
+    font-size: calc(4px + 1vw);
+    margin-bottom: 20px;
+}
+.page-career .detail-content .right-detail{
+    float: right; 
+    width: 28%;
+    background: #E9FCF4;
+    border: 1px solid #02C879;
+    border-radius: 5px;
+    padding: 20px;
+}
+.page-career .detail-content .right-detail .md-col{
+    margin-bottom: 20px;
+}
+.page-career .detail-content .right-detail .md-col:last-child{
+    margin-bottom: 0px;
+}
+.page-career .detail-content .right-detail .md-col p{
+    font-weight: 700;
+}
+.page-career .md-same-row .md-title-row{
+    color: #02C879;
+    font-size: calc(6px + 1vw);
+    margin-bottom: 20px;
+}
 
 @media screen and (max-width: 767px){
     .page-career .main-content h6{
@@ -1315,6 +1357,16 @@ p.error{
     }
     .md-modal-fancybox{
         width: 90%;
+    }
+    .page-career .detail-content .left-detail{
+        float: none;
+        width: 100%;
+    }
+    .page-career .detail-content .left-detail h6{
+        font-size: calc(7px + 1.5vw);
+    }
+    .page-career .md-same-row .md-title-row{
+        font-size: calc(9px + 1.5vw);
     }
 }
 
