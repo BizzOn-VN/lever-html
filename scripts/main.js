@@ -92,6 +92,10 @@ jQuery(document).ready(function ($) {
         var fancybox = function(){
 
             // $("#modal-sucess").fancybox().trigger('click');
+            // $("#modal-sucess-1").fancybox().trigger('click');
+            // $("#modal-sucess-2").fancybox().trigger('click');
+            // $("#modal-sucess-3").fancybox().trigger('click');
+            // $("#modal-sucess-4").fancybox().trigger('click');
             $(".the-le").fancybox({});
         }
 
