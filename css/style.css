@@ -185,6 +185,12 @@ html{
     .page-header .main-menu ul li{
         padding: 8px;
     }
+    .page-header .main-menu ul li a{
+        font-size: calc(3px + 1vw);
+    }
+    .page-header .main-menu{
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 767px){
