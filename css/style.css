@@ -400,9 +400,26 @@ html{
 }
 .page-main .section-4 .md-img{
     margin-top: -12%;
+    position: relative;
 }
 .page-main .section-4 .md-img img{
     width: 100%;
+}
+.page-main .section-4 .md-link-1{
+    position: absolute;
+    left: 54%;
+    top: 15%;
+    width: 15%;
+    height: 21%;
+    display: block;
+}
+.page-main .section-4 .md-link-2{
+    position: absolute;
+    left: 79%;
+    top: 25%;
+    width: 15%;
+    height: 21%;
+    display: block;
 }
 .page-main .section-5{
     background: url(../images/sc5-bg.png) no-repeat bottom;
@@ -549,7 +566,7 @@ html{
     .page-main .section-4 .md-row .md-col .md-img img{
         width: 100%;
     }
-    .page-main .section-4 .md-row .md-col .md-content{
+    .page-main .section-4 .md-row .md-col .md-content a{
         width: 70%;
         display: table-cell;
         vertical-align: middle;
