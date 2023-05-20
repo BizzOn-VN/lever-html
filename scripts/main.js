@@ -102,7 +102,7 @@ jQuery(document).ready(function ($) {
         }
 
         var getslider = function(){
-            $('.owl-carousel').owlCarousel({
+            $('.section-4 .owl-carousel').owlCarousel({
                 loop:true,
                 margin:15,
                 nav:true,
@@ -115,6 +115,23 @@ jQuery(document).ready(function ($) {
                     },
                     1000:{
                         items: 3.5
+                    }
+                }
+            });
+            $('.section-3 .owl-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                nav:true,
+                dot:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:1
+                    },
+                    1000:{
+                        items:1
                     }
                 }
             });
