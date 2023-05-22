@@ -99,6 +99,13 @@ jQuery(document).ready(function ($) {
                        $('.page-program .section-2 .md-row-1 .main-content').height(h3height);
                };
             window.addEventListener("resize", onresize);
+             var height_left = $('.page-about .section-1 .md-content-3 .content .right-content').outerHeight();
+              $('.page-about .section-1 .md-content-3 .content .left-content').css("height",height_left);
+            var onresize = function() {
+              var height_left = $('.page-about .section-1 .md-content-3 .content .right-content').outerHeight();
+              $('.page-about .section-1 .md-content-3 .content .left-content').css("height",height_left);
+            };
+            window.addEventListener("resize", onresize);
         }
 
         var getslider = function(){
@@ -135,7 +142,23 @@ jQuery(document).ready(function ($) {
                     }
                 }
             });
-            
+            $('.page-program .section-2 .owl-carousel').owlCarousel({
+                loop:true,
+                stagePadding: 30,
+                margin:10,
+                nav:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:1
+                    },
+                    1000:{
+                        items:1
+                    }
+                }
+            });
         }
 
         var semanticUI = function(){
